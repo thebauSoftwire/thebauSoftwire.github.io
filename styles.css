@@ -12,8 +12,8 @@
 
 /* Block */
 nav {
-    display: flex;
-    justify-content: flex-end;
+    float: left;
+    display: block;
     height: 5rem;
     background: linear-gradient(45deg, --secondary-accent, --primary-accent);
     width: 100%;
@@ -24,7 +24,7 @@ a {
 }
 
 a:visited{
-    color:blue;
+    color:white;
 }
 
 /* Exception */

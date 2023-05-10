@@ -3,9 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <title>My test page</title>
+    <title>Personal recipes</title>
   </head>
   <body>
-    <p>This is my page</p>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li>Breakfast</li>
+            <li>Lunch</li>
+            <li>Dinner</li>
+            <li>Add a recipe</li>
+        </ul>
+    </nav>
+    <h1>Hi</h1>
+    <h2>Breakfast</h2>
+    <h2>Lunch</h2>
+    <h2>Dinner</h2>
+    <h2>Submit a recipe</h2>
+    <form action="/recipe-submission" method="post">
+        <ul>
+            <li>
+              <label for="title">Recipe title</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="instructions">Instructions</label>
+              <textarea type="email" id="mail" name="user_email"></textarea>
+            </li>
+            <li>
+              <label for="recipeImage">Message:</label>
+              <input type="image" alt="recipe image" />
+            </li>
+          </ul>
+    </form>
   </body>
 </html>

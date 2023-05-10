@@ -15,7 +15,7 @@ nav {
     float: left;
     display: block;
     height: 5rem;
-    background: linear-gradient(45deg, --secondary-accent, --primary-accent);
+    background: linear-gradient(45deg, var(--secondary-accent), var(--primary-accent));
     width: 100%;
 }
 

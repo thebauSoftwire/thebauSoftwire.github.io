@@ -8,18 +8,18 @@
   <body>
     <nav>
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li>Breakfast</li>
-            <li>Lunch</li>
-            <li>Dinner</li>
-            <li>Add a recipe</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#breakfast">Breakfast</a></li>
+            <li><a href="#lunch">Lunch</a></li>
+            <li><a href="#dinner">Dinner</a></li>
+            <li><a href="#recipe-submission">Add a recipe</a></li>
         </ul>
     </nav>
-    <h1>Hi</h1>
-    <h2>Breakfast</h2>
-    <h2>Lunch</h2>
-    <h2>Dinner</h2>
-    <h2>Submit a recipe</h2>
+    <h1 id="home">Hungry?</h1>
+    <h2 id="breakfast">Breakfast</h2>
+    <h2 id="lunch">Lunch</h2>
+    <h2 id="dinner">Dinner</h2>
+    <h2 id="recipe-submission">Submit a recipe</h2>
     <form action="/recipe-submission" method="post">
         <ul>
             <li>
@@ -31,7 +31,7 @@
               <textarea type="email" id="mail" name="user_email"></textarea>
             </li>
             <li>
-              <label for="recipeImage">Message:</label>
+              <label for="recipeImage">Recipe image</label>
               <input type="image" alt="recipe image" />
             </li>
           </ul>

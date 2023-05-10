@@ -1,0 +1,15 @@
+:root {
+    --primary: #fff591;
+    --primary-accent: #ff8a5c;
+    --secondary: #f5587b;
+    --secondary-accent: #e41749;
+
+}
+
+nav {
+    display: flex;
+    height: 5rem;
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, --secondary-accent, --primary-accent); 
+}
+

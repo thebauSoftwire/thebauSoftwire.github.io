@@ -6,6 +6,10 @@
 
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Composition */
 nav a + a {
     margin-right: 3rem;
@@ -13,7 +17,7 @@ nav a + a {
 
 /* Utility */
 .text-14px {
-    font-size: 14px;
+    font-size: 30px;
 }
 
 .text-white {

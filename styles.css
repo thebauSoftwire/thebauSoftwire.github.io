@@ -6,10 +6,27 @@
 
 }
 
+/* Composition */
+
+/* Utility */
+
+/* Block */
 nav {
     display: flex;
+    justify-content: flex-end;
     height: 5rem;
     background: linear-gradient(45deg, --secondary-accent, --primary-accent);
     width: 100%;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color:blue;
+}
+
+/* Exception */
+
 

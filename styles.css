@@ -7,8 +7,18 @@
 }
 
 /* Composition */
+nav a + a {
+    margin-right: 3rem;
+}
 
 /* Utility */
+.text-14px-white {
+    font-size: 14px;
+}
+
+.text-white {
+    color: white;
+}
 
 /* Block */
 nav {

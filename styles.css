@@ -47,6 +47,11 @@ a:visited{
     color:white;
 }
 
+.make-it-scroll {
+    height: 500px;
+    background: var(--primary);
+}
+
 /* Exception */
 
 

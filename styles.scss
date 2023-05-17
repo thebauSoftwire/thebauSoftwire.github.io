@@ -52,12 +52,16 @@ a {
 
 .make-it-scroll {
     height: 500px;
-    background: colours.$primary;
+    background-color: colours.$primary;
 }
 
 .section {
+    display: flex;
     height: 100vh;
-    background-image: url('./assets/bibimbap.png');
+}
+
+.home {
+    background-color: colours.$secondary;
 }
 
 /* Exception */

@@ -6,6 +6,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 /* Composition */
@@ -33,6 +34,7 @@ nav a:first-child {
 /* Block */
 nav {
   position: sticky;
+  top: 0;
   height: 5rem;
   background: linear-gradient(45deg, #e41749, #ff8a5c);
   width: 100%;
@@ -47,12 +49,16 @@ a:visited {
 
 .make-it-scroll {
   height: 500px;
-  background: #fff591;
+  background-color: #fff591;
+}
+
+.section {
+  display: flex;
+  height: 100vh;
 }
 
 .home {
-  height: 100%;
-  background-image: url("./assets/bibimbap.png");
+  background-image: url(assets/bibimbap.png);
 }
 
 /* Exception */

@@ -52,12 +52,12 @@ a:visited {
   background-color: #fff591;
 }
 
-.section {
+section {
   display: flex;
   height: 100vh;
 }
 
-.home {
+#home {
   background-image: url("assets/bibimbap.png");
 }
 

@@ -55,12 +55,12 @@ a {
     background-color: colours.$primary;
 }
 
-.section {
+section {
     display: flex;
     height: 100vh;
 }
 
-.home {
+#home {
     background-image: url('assets/bibimbap.png');
 }
 

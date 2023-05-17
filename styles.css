@@ -49,7 +49,12 @@ a:visited {
 
 .make-it-scroll {
   height: 500px;
-  background: var(--primary);
+  background: #fff591;
+}
+
+.home {
+  height: 100%;
+  background-image: url("./assets/bibimbap.png");
 }
 
 /* Exception */

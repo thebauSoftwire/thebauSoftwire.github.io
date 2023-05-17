@@ -57,6 +57,7 @@ section {
   height: 100vh;
 }
 section #home {
+  height: calc(100vh - 5rem);
   background-image: url("assets/bibimbap.png");
 }
 

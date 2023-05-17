@@ -34,8 +34,7 @@ nav a:first-child{
 
 /* Block */
 nav {
-    float: left;
-    display: block;
+    position: sticky;
     height: 5rem;
     background: linear-gradient(45deg, colours.$secondary-accent, colours.$primary-accent);
     width: 100%;

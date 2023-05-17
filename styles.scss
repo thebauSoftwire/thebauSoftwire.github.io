@@ -42,10 +42,10 @@ nav {
 
 a {
     text-decoration: none;
-}
 
-a:visited{
-    color:white;
+    &:visited{
+        color:white;
+    }
 }
 
 .make-it-scroll {

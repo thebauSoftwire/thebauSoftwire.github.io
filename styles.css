@@ -32,8 +32,7 @@ nav a:first-child {
 
 /* Block */
 nav {
-  float: left;
-  display: block;
+  position: sticky;
   height: 5rem;
   background: linear-gradient(45deg, #e41749, #ff8a5c);
   width: 100%;
@@ -42,7 +41,6 @@ nav {
 a {
   text-decoration: none;
 }
-
 a:visited {
   color: white;
 }

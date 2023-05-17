@@ -56,8 +56,7 @@ section {
   display: flex;
   height: 100vh;
 }
-
-#home {
+section #home {
   background-image: url("assets/bibimbap.png");
 }
 

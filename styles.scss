@@ -1,5 +1,6 @@
 @use 'colours';
 @use 'constants';
+@use 'fonts';
 
 * {
     margin: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: fonts.$wix-text;
     height: 100%;
     scroll-behavior: smooth;
 }
@@ -19,6 +20,11 @@ nav a + a {
 
 nav a:first-child{
     margin-right: auto;
+    margin-left: 1rem;
+}
+
+nav a:last-child{
+    margin-right: 1rem;
 }
 
 /* Utility */
@@ -34,10 +40,26 @@ nav a:first-child{
     font-weight: bold;
 }
 
+.display-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.display-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Block */
+h1 {
+    font-family: fonts.$wix-display;
+}
+
 nav {
     position: sticky;
     top: 0;
+    display: flex;
+    align-items: center;
     height: constants.$nav-bar-height;
     background: linear-gradient(45deg, colours.$secondary-accent, colours.$primary-accent);
     width: 100%;
@@ -45,6 +67,7 @@ nav {
 
 a {
     text-decoration: none;
+    color: white;
 
     &:visited{
         color:white;
@@ -59,11 +82,22 @@ a {
 section {
     display: flex;
     height: 100vh;
+}
 
-    #home {
-        height: calc(100vh - constants.$nav-bar-height);
-        background-image: url('assets/bibimbap.png');
-    }
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: calc(100vh - constants.$nav-bar-height);
+    background-image: url('assets/bibimbap.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.recipe-box {
+    width: 100rem;
 }
 
 /* Exception */

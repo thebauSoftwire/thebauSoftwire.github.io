@@ -17,8 +17,12 @@ body {
 }
 
 /* Composition */
-nav * + a {
-    margin-right: 3rem;
+nav a + a {
+    margin-left: 3rem;
+}
+
+nav a:first-child{
+    margin-right: auto;
 }
 
 /* Utility */
@@ -45,6 +49,8 @@ nav {
 
 a {
     text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 a:visited{
@@ -54,6 +60,10 @@ a:visited{
 .make-it-scroll {
     height: 500px;
     background: var(--primary);
+}
+
+.home {
+
 }
 
 /* Exception */

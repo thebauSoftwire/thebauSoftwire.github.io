@@ -1,0 +1,66 @@
+$primary: #fff591;
+$primary-accent: #ff8a5c;
+$secondary: #f5587b;
+$secondary-accent: #e41749;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+/* Composition */
+nav a + a {
+    margin-left: 3rem;
+}
+
+nav a:first-child{
+    margin-right: auto;
+}
+
+/* Utility */
+.text-28px {
+    font-size: 28px;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* Block */
+nav {
+    float: left;
+    display: block;
+    height: 5rem;
+    background: linear-gradient(45deg, $secondary-accent, $primary-accent);
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color:white;
+}
+
+.make-it-scroll {
+    height: 500px;
+    background: var(--primary);
+}
+
+.home {
+    
+}
+
+/* Exception */
+
+

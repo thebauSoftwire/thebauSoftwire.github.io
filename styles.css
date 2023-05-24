@@ -30,6 +30,10 @@ nav a:last-child {
   font-size: 28px;
 }
 
+.text-7rem {
+  font-size: 7rem;
+}
+
 .text-white {
   color: white;
 }
@@ -38,19 +42,35 @@ nav a:last-child {
   font-weight: bold;
 }
 
-.display-flex-row {
-  display: flex;
-  flex-direction: row;
+.margin-0 {
+  margin: 0;
 }
 
-.display-flex-column {
-  display: flex;
-  flex-direction: column;
+.margin-left-2rem {
+  margin-left: 2rem;
+}
+
+.hover-up {
+  transition: margin 0.2s ease-in-out;
+}
+
+.hover-up:hover {
+  margin-top: -2;
 }
 
 /* Block */
 h1 {
   font-family: "Wix Madefor Display", sans-serif;
+  padding-top: 6rem;
+  font-style: italic;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 nav {
@@ -61,6 +81,7 @@ nav {
   height: 5rem;
   background: linear-gradient(45deg, #e41749, #ff8a5c);
   width: 100%;
+  border-radius: 0 0 10px 10px;
 }
 
 a {
@@ -79,21 +100,26 @@ a:visited {
 section {
   display: flex;
   height: 100vh;
+  margin: 0 1rem;
 }
 
 .home {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   height: calc(100vh - 5rem);
   background-image: url("assets/bibimbap.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+  padding-left: 2rem;
 }
 
 .recipe-box {
-  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  color: white;
+  gap: 10px;
 }
 
 /* Exception */

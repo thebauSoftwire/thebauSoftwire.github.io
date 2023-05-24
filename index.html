@@ -12,14 +12,17 @@
     <title>Personal recipes</title>
   </head>
   <body>
-    <section class="home margin-0">
-      <h1 class="text-bold text-white text-7rem hover-up"><em>Hungry?</em></h1>
-      <div class="recipe-box">
-        <h2>Bibimbap</h2>
-        <p>Bibimbap simply translates to “mixed rice with meat and assorted vegetables“. You can make endless variations to this dish depending on your preference and dietary requirements.</p>
+    <script src="script.js"></script>
+    <section id="home" class="home margin-0">
+      <div class="hover-up">
+        <h1 class="text-bold text-white text-size-7rem"><em>Hungry?</em></h1>
+        <div class="recipe-box">
+          <h2>Bibimbap</h2>
+          <p class="text-size-18px">Bibimbap simply translates to “mixed rice with meat and assorted vegetables“. You can make endless variations to this dish depending on your preference and dietary requirements.</p>
+        </div>
       </div>
     </section>
-    <nav class="text-28px text-white text-bold">
+    <nav class="text-size-28px text-white text-bold">
         <a href="#home">Home</a>
         <a href="#breakfast">Breakfast</a>
         <a href="#lunch">Lunch</a>
@@ -28,6 +31,33 @@
     </nav>
     <section id="breakfast">
       <h1>Breakfast</h1>
+      <div class="recipe-card-container">
+        <div class="recipe-box-with-border">
+          <img class="food-picture" alt="shakshuka" src="assets/shakshuka.png">
+          <h2 class="title">Shakshuka</h2>
+          <button class="image-button"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <p class="recipe-description">Want a breakfast that'll fuel you for the day? These chorizo baked eggs are spicy, warming, and the perfect weekend breakfast.</p>
+        </div>
+        <div class="recipe-box-with-border">
+          <img class="food-picture" alt="beakfast noodles" src="assets/breakfast-noodles.png">
+          <h2 class="title">Breakfast Noodles</h2>
+          <button class="image-button"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <p class="recipe-description">Picture a fry-up on top of a bowl of instant noodles, and you’ll get an idea of what this is all about. A cup of tea is optional, but highly recommended.</p>
+        </div>
+        <div class="recipe-box-with-border">
+          <img class="food-picture" alt="croque madame croissants" src="assets/croque-madame-croissants.png">
+          <h2 class="title">Croque Madame Croissants</h2>
+          <button class="image-button"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <p class="recipe-description">The ooziest, cheesiest, most fabulous way to start the day. Cheese and ham and mustardy bechamel all loaded into Pret All-Butter Croissants. A total delight.</p>
+        </div>
+        <div class="recipe-box-with-border">
+          <img class="food-picture" alt="peaches and cream croissants" src="assets/peaches-and-cream-crepes.png">
+          <h2 class="title">Peaches and Cream Croissants</h2>
+          <button id="peaches-and-cream-crepes-down-button" class="image-button" onClick="showRecipeDescription('peaches-and-cream-crepes')"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <button id="peaches-and-cream-crepes-up-button" class="image-button" onClick="hideRecipeDescription('peaches-and-cream-crepes')" style="display:none"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <p id="peaches-and-cream-crepes" class="recipe-description" style="display:none">Peaches and cream are one of my favourite dessert combinations. Caramelizing peaches makes them extra sweet and slightly crisp, all smothered in almond cream.</p>
+        </div>
+      </div>
     </section>
     <section id="lunch">
       <h1>Lunch</h1>

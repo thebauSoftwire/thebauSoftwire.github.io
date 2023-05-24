@@ -28,12 +28,16 @@ nav a:last-child{
 }
 
 /* Utility */
-.text-28px {
+.text-size-28px {
     font-size: 28px;
 }
 
-.text-7rem {
+.text-size-7rem {
     font-size: 7rem;
+}
+
+.text-size-18px {
+    font-size: 18px;
 }
 
 .text-white {
@@ -57,13 +61,15 @@ nav a:last-child{
 }
 
 .hover-up:hover {
-    margin-top: -2;
+    margin-top: -2rem;
 }
 
 /* Block */
 h1 {
     font-family: fonts.$wix-display;
     padding-top: 6rem;
+    margin-bottom: 1rem;
+
     font-style: italic;
     font-size: 5rem;
     font-weight: bold;
@@ -102,8 +108,10 @@ a {
 
 section {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     margin: 0 1rem;
+    gap: 1rem;
 }
 
 .home {
@@ -123,11 +131,47 @@ section {
     display: flex;
     flex-direction: column;
 
-    width: 18rem;
+    width: 24rem;
     color: white;
     gap: 10px;
 }
 
+.recipe-box-with-border {
+    @extend .recipe-box;
+    border: solid 4px colours.$secondary-accent;
+    padding: 8px;
+
+    color: black;
+}
+
+.recipe-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+img {
+    width: 24rem;
+    height: 24rem;
+    object-fit: cover;
+
+    border-radius: 2px;
+}
+
+.image-button {
+    border: none;
+    background-color: transparent;
+    margin-top: auto;
+}
+
+.image-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.recipe-description {
+    font-size: 18px;
+}
 /* Exception */
 
 

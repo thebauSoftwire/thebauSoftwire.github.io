@@ -54,6 +54,10 @@ nav a:last-child {
   margin-left: 2rem;
 }
 
+.padding-top-10rem {
+  padding-top: 10rem;
+}
+
 .hover-up {
   transition: margin 0.2s ease-in-out;
 }
@@ -106,7 +110,7 @@ section {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin: 0 1rem;
+  padding: 0 1rem;
   gap: 1rem;
 }
 
@@ -114,7 +118,7 @@ section {
   display: flex;
   flex-direction: column;
   height: calc(100vh - 5rem);
-  background-image: url("assets/bibimbap.png");
+  background-image: url("assets/bibimbap-3.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -124,15 +128,23 @@ section {
 .recipe-box, .recipe-box-with-border {
   display: flex;
   flex-direction: column;
+  align-self: start;
   width: 24rem;
   color: white;
   gap: 10px;
 }
 
 .recipe-box-with-border {
+  justify-content: center;
   border: solid 4px #e41749;
   padding: 8px;
+  min-height: 34rem;
   color: black;
+  overflow: hidden;
+}
+
+.recipe-box-with-border p, h2 {
+  padding: 0 1rem 0.5rem;
 }
 
 .recipe-card-container {
@@ -152,6 +164,7 @@ img {
   border: none;
   background-color: transparent;
   margin-top: auto;
+  align-self: center;
 }
 
 .image-button img {
@@ -161,6 +174,14 @@ img {
 
 .recipe-description {
   font-size: 18px;
+}
+
+#lunch {
+  background: linear-gradient(white, #fff591, #ff8a5c);
+}
+
+#lunch h1 {
+  color: #f5587b;
 }
 
 /* Exception */

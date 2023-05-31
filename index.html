@@ -14,7 +14,7 @@
   <body>
     <script src="script.js"></script>
     <section id="home" class="home margin-0">
-      <div class="hover-up">
+      <div class="hover-up padding-top-10rem">
         <h1 class="text-bold text-white text-size-7rem"><em>Hungry?</em></h1>
         <div class="recipe-box">
           <h2>Bibimbap</h2>
@@ -35,26 +35,29 @@
         <div class="recipe-box-with-border">
           <img class="food-picture" alt="shakshuka" src="assets/shakshuka.png">
           <h2 class="title">Shakshuka</h2>
-          <button class="image-button"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
-          <p class="recipe-description">Want a breakfast that'll fuel you for the day? These chorizo baked eggs are spicy, warming, and the perfect weekend breakfast.</p>
+          <button id="shakshuka-down-button" class="image-button" onClick="showRecipeDescription('shakshuka')"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <button id="shakshuka-up-button" class="image-button" onClick="hideRecipeDescription('shakshuka')" style="display:none"><img src="assets/arrow-up-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <p id="shakshuka" class="recipe-description" style="display:none">Want a breakfast that'll fuel you for the day? These chorizo baked eggs are spicy, warming, and the perfect weekend breakfast.</p>
         </div>
         <div class="recipe-box-with-border">
           <img class="food-picture" alt="beakfast noodles" src="assets/breakfast-noodles.png">
           <h2 class="title">Breakfast Noodles</h2>
-          <button class="image-button"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
-          <p class="recipe-description">Picture a fry-up on top of a bowl of instant noodles, and you’ll get an idea of what this is all about. A cup of tea is optional, but highly recommended.</p>
+          <button id="breakfast-noodles-down-button" class="image-button" onClick="showRecipeDescription('breakfast-noodles')"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <button id="breakfast-noodles-up-button" class="image-button" onClick="hideRecipeDescription('breakfast-noodles')" style="display:none"><img src="assets/arrow-up-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <p id="breakfast-noodles" class="recipe-description" style="display:none">Picture a fry-up on top of a bowl of instant noodles, and you’ll get an idea of what this is all about. A cup of tea is optional, but highly recommended.</p>
         </div>
         <div class="recipe-box-with-border">
           <img class="food-picture" alt="croque madame croissants" src="assets/croque-madame-croissants.png">
           <h2 class="title">Croque Madame Croissants</h2>
-          <button class="image-button"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
-          <p class="recipe-description">The ooziest, cheesiest, most fabulous way to start the day. Cheese and ham and mustardy bechamel all loaded into Pret All-Butter Croissants. A total delight.</p>
+          <button id="croque-madame-croissants-down-button" class="image-button" onClick="showRecipeDescription('croque-madame-croissants')"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <button id="croque-madame-croissants-up-button" class="image-button" onClick="hideRecipeDescription('croque-madame-croissants')" style="display:none"><img src="assets/arrow-up-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <p id="croque-madame-croissants" class="recipe-description" style="display:none">The ooziest, cheesiest, most fabulous way to start the day. Cheese and ham and mustardy bechamel all loaded into Pret All-Butter Croissants. A total delight.</p>
         </div>
         <div class="recipe-box-with-border">
           <img class="food-picture" alt="peaches and cream croissants" src="assets/peaches-and-cream-crepes.png">
           <h2 class="title">Peaches and Cream Croissants</h2>
           <button id="peaches-and-cream-crepes-down-button" class="image-button" onClick="showRecipeDescription('peaches-and-cream-crepes')"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
-          <button id="peaches-and-cream-crepes-up-button" class="image-button" onClick="hideRecipeDescription('peaches-and-cream-crepes')" style="display:none"><img src="assets/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <button id="peaches-and-cream-crepes-up-button" class="image-button" onClick="hideRecipeDescription('peaches-and-cream-crepes')" style="display:none"><img src="assets/arrow-up-secondary-accent.png" alt="Arrow down image to view description"></button>
           <p id="peaches-and-cream-crepes" class="recipe-description" style="display:none">Peaches and cream are one of my favourite dessert combinations. Caramelizing peaches makes them extra sweet and slightly crisp, all smothered in almond cream.</p>
         </div>
       </div>

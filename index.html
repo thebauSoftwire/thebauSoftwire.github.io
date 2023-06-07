@@ -23,75 +23,75 @@
       </div>
     </section>
     <nav class="text-size-28px text-white text-bold">
-        <a href="#home">Home</a>
-        <a href="#breakfast">Breakfast</a>
-        <a href="#lunch">Lunch</a>
-        <a href="#dinner">Dinner</a>
-        <a href="#recipe-submission">Add a recipe</a>
+        <a href="#home" role="button">Home</a>
+        <a href="#breakfast" role="button">Breakfast</a>
+        <a href="#lunch" role="button">Lunch</a>
+        <a href="#dinner" role="button">Dinner</a>
+        <a href="#recipe-submission" role="button">Add a recipe</a>
     </nav>
-    <section id="breakfast">
+    <section id="breakfast" aria_labelledby="breakfast">
       <h1>Breakfast</h1>
       <div class="recipe-card-container">
         <div class="recipe-box-with-border">
           <img class="food-picture" alt="shakshuka" src="assets/shakshuka.png">
           <h2 class="title">Shakshuka</h2>
-          <button id="shakshuka-down-button" class="image-button" onClick="showRecipeDescription('shakshuka')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
-          <button id="shakshuka-up-button" class="image-button" onClick="hideRecipeDescription('shakshuka')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <button id="shakshuka-down-button" class="image-button" onClick="showRecipeDescription('shakshuka')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Click to view description"></button>
+          <button id="shakshuka-up-button" class="image-button" onClick="hideRecipeDescription('shakshuka')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Click to hide description"></button>
           <p id="shakshuka" class="recipe-description" style="display:none">Want a breakfast that'll fuel you for the day? These chorizo baked eggs are spicy, warming, and the perfect weekend breakfast.</p>
         </div>
         <div class="recipe-box-with-border">
           <img class="food-picture" alt="beakfast noodles" src="assets/breakfast-noodles.png">
           <h2 class="title">Breakfast Noodles</h2>
-          <button id="breakfast-noodles-down-button" class="image-button" onClick="showRecipeDescription('breakfast-noodles')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
-          <button id="breakfast-noodles-up-button" class="image-button" onClick="hideRecipeDescription('breakfast-noodles')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <button id="breakfast-noodles-down-button" class="image-button" onClick="showRecipeDescription('breakfast-noodles')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Click to view description"></button>
+          <button id="breakfast-noodles-up-button" class="image-button" onClick="hideRecipeDescription('breakfast-noodles')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Click to hide description"></button>
           <p id="breakfast-noodles" class="recipe-description" style="display:none">Picture a fry-up on top of a bowl of instant noodles, and you’ll get an idea of what this is all about. A cup of tea is optional, but highly recommended.</p>
         </div>
         <div class="recipe-box-with-border">
           <img class="food-picture" alt="croque madame croissants" src="assets/croque-madame-croissants.png">
           <h2 class="title">Croque Madame Croissants</h2>
-          <button id="croque-madame-croissants-down-button" class="image-button" onClick="showRecipeDescription('croque-madame-croissants')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
-          <button id="croque-madame-croissants-up-button" class="image-button" onClick="hideRecipeDescription('croque-madame-croissants')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <button id="croque-madame-croissants-down-button" class="image-button" onClick="showRecipeDescription('croque-madame-croissants')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Click to view description"></button>
+          <button id="croque-madame-croissants-up-button" class="image-button" onClick="hideRecipeDescription('croque-madame-croissants')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Click to hide description"></button>
           <p id="croque-madame-croissants" class="recipe-description" style="display:none">The ooziest, cheesiest, most fabulous way to start the day. Cheese and ham and mustardy bechamel all loaded into Pret All-Butter Croissants. A total delight.</p>
         </div>
         <div class="recipe-box-with-border">
-          <img class="food-picture" alt="peaches and cream croissants" src="assets/peaches-and-cream-crepes.png">
-          <h2 class="title">Peaches and Cream Croissants</h2>
-          <button id="peaches-and-cream-crepes-down-button" class="image-button" onClick="showRecipeDescription('peaches-and-cream-crepes')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
-          <button id="peaches-and-cream-crepes-up-button" class="image-button" onClick="hideRecipeDescription('peaches-and-cream-crepes')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <img class="food-picture" alt="peaches and cream crepes" src="assets/peaches-and-cream-crepes.png">
+          <h2 class="title">Peaches and Cream Crepes</h2>
+          <button id="peaches-and-cream-crepes-down-button" class="image-button" onClick="showRecipeDescription('peaches-and-cream-crepes')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Click to view description"></button>
+          <button id="peaches-and-cream-crepes-up-button" class="image-button" onClick="hideRecipeDescription('peaches-and-cream-crepes')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Click to hide description"></button>
           <p id="peaches-and-cream-crepes" class="recipe-description" style="display:none">Peaches and cream are one of my favourite dessert combinations. Caramelizing peaches makes them extra sweet and slightly crisp, all smothered in almond cream.</p>
         </div>
       </div>
     </section>
-    <section id="lunch">
+    <section id="lunch" aria_labelledby="lunch">
       <h1>Lunch</h1>
       <div class="recipe-card-container">
         <div class="recipe-box-with-border text-white">
-          <img class="food-picture" alt="shakshuka" src="assets/pomegranatepork-belly.png">
+          <img class="food-picture" alt="Pomegranate Pork Belly With Tomato Ginger Salad" src="assets/pomegranatepork-belly.png">
           <h2 class="title">Pomegranate Pork Belly With Tomato Ginger Salad</h2>
-          <button id="pomegranatepork-belly-down-button" class="image-button" onClick="showRecipeDescription('pomegranatepork-belly')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
-          <button id="pomegranatepork-belly-up-button" class="image-button" onClick="hideRecipeDescription('pomegranatepork-belly')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <button id="pomegranatepork-belly-down-button" class="image-button" onClick="showRecipeDescription('pomegranatepork-belly')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Click to view description"></button>
+          <button id="pomegranatepork-belly-up-button" class="image-button" onClick="hideRecipeDescription('pomegranatepork-belly')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Click to hide description"></button>
           <p id="pomegranatepork-belly" class="recipe-description" style="display:none">A vibrant, juicy, sticky, porky number that's absolutely perfect for a summery lunch. You are going to love it.</p>
         </div>
         <div class="recipe-box-with-border text-white">
-          <img class="food-picture" alt="beakfast noodles" src="assets/zaatar-aubergine.png">
+          <img class="food-picture" alt="Za'atar Aubergine and Bulgur Wheat" src="assets/zaatar-aubergine.png">
           <h2 class="title">Za'atar Aubergine and Bulgur Wheat</h2>
-          <button id="zaatar-aubergine-down-button" class="image-button" onClick="showRecipeDescription('zaatar-aubergine')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
-          <button id="zaatar-aubergine-up-button" class="image-button" onClick="hideRecipeDescription('zaatar-aubergine')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <button id="zaatar-aubergine-down-button" class="image-button" onClick="showRecipeDescription('zaatar-aubergine')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Click to view description"></button>
+          <button id="zaatar-aubergine-up-button" class="image-button" onClick="hideRecipeDescription('zaatar-aubergine')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Click to hide description"></button>
           <p id="zaatar-aubergine" class="recipe-description" style="display:none">Juicy aubergine coated in crispy za'atar on a bed of fresh bulgar wheat. This is going to be your new favourite lunch.</p>
         </div>
         <div class="recipe-box-with-border text-white">
-          <img class="food-picture" alt="croque madame croissants" src="assets/crispy-chilli-mint-pork.png">
+          <img class="food-picture" alt="Crispy Chilli And Mint Pork" src="assets/crispy-chilli-mint-pork.png">
           <h2 class="title">Crispy Chilli And Mint Pork</h2>
-          <button id="crispy-chilli-mint-pork-down-button" class="image-button" onClick="showRecipeDescription('crispy-chilli-mint-pork')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Arrow down image to view description"></button>
-          <button id="crispy-chilli-mint-pork-up-button" class="image-button" onClick="hideRecipeDescription('crispy-chilli-mint-pork')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Arrow down image to view description"></button>
+          <button id="crispy-chilli-mint-pork-down-button" class="image-button" onClick="showRecipeDescription('crispy-chilli-mint-pork')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Click to view description"></button>
+          <button id="crispy-chilli-mint-pork-up-button" class="image-button" onClick="hideRecipeDescription('crispy-chilli-mint-pork')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Click to hide description"></button>
           <p id="crispy-chilli-mint-pork" class="recipe-description" style="display:none">A quick simple lunch, packed with juicy crispy pork and fresh mint. Don’t forget the crispy egg, its what brings this meal to life.</p>
         </div>
       </div>
     </section>
-    <section id="dinner">
+    <section id="dinner" aria_labelledby="dinner">
       <h1>Dinner</h1>
     </section>
-    <section id="recipe-submission">
+    <section id="recipe-submission" aria_labelledby="submit_a_recipe">
       <h1>Submit a recipe</h1>
       <form action="/recipe-submission" method="post">
         <ul>

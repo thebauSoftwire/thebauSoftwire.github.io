@@ -9,6 +9,9 @@ body {
   font-family: "Wix Madefor Text", sans-serif;
   height: 100%;
   scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 /* Composition */
@@ -27,7 +30,7 @@ nav a:last-child {
 
 /* Utility */
 .text-size-28px {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .text-size-7rem {
@@ -35,19 +38,23 @@ nav a:last-child {
 }
 
 .text-size-18px {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .text-white {
   color: white;
 }
 
+.text-blue-dark {
+  color: #0751a6;
+}
+
 .text-bold {
   font-weight: bold;
 }
 
-.text-outlign {
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+.text-align-centre {
+  text-align: center;
 }
 
 .margin-0 {
@@ -58,8 +65,12 @@ nav a:last-child {
   margin-left: 2rem;
 }
 
-.padding-top-10rem {
-  padding-top: 10rem;
+.margin-top-0 {
+  margin-top: 0;
+}
+
+.padding-1rem {
+  padding: 1rem;
 }
 
 .hover-up {
@@ -70,10 +81,30 @@ nav a:last-child {
   margin-top: -2rem;
 }
 
+.width-fit-content {
+  width: fit-content;
+}
+
+.background-colour-white {
+  background-color: white;
+}
+
+.display-flex-column-centre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.height-6rem-width-30rem {
+  height: 6rem;
+  width: 30rem;
+}
+
 /* Block */
 h1 {
   font-family: "Wix Madefor Display", sans-serif;
-  padding-top: 6rem;
+  margin-top: 6rem;
   margin-bottom: 1rem;
   font-style: italic;
   font-size: 5rem;
@@ -94,7 +125,7 @@ nav {
   height: 5rem;
   background: linear-gradient(45deg, #e41749, #ff8a5c);
   width: 100%;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 0.625rem 0.625rem;
 }
 
 a {
@@ -108,29 +139,29 @@ a:visited {
   color: white;
 }
 a:hover {
-  box-shadow: inset 100px 0 0 0 #14E4F7;
+  box-shadow: inset 6.25rem 0 0 0 #14E4F7;
 }
 
 .make-it-scroll {
-  height: 500px;
+  height: 31.25rem;
   background-color: #fff591;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   padding: 0 1rem;
   gap: 1rem;
 }
 
 .home {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: calc(100vh - 5rem);
   background-image: url("assets/bibimbap-3.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: cover;
   padding-left: 2rem;
 }
@@ -141,15 +172,16 @@ section {
   align-self: start;
   width: 24rem;
   color: white;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .recipe-box-with-border {
   justify-content: center;
-  border: solid 4px #e41749;
-  padding: 8px;
+  border: solid 0.25rem #e41749;
+  padding: 0.5rem;
   min-height: 34rem;
   background-color: white;
+  margin-bottom: 1rem;
   color: black;
   overflow: hidden;
 }
@@ -162,13 +194,14 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 img {
   width: 24rem;
   height: 24rem;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: 0.125rem;
 }
 
 .image-button {
@@ -187,12 +220,12 @@ img {
 }
 
 .image-button img {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .recipe-description {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 #lunch {
@@ -201,6 +234,17 @@ img {
 
 #lunch h1 {
   color: #f5587b;
+}
+
+#dinner {
+  background: linear-gradient(#ff8a5c, #f5587b, #e41749);
+  min-height: 100vh;
+}
+
+#dinner .recipe-box-with-border {
+  border-color: white;
+  background-color: #f5587b;
+  color: white;
 }
 
 /* Exception */

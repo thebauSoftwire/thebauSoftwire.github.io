@@ -14,20 +14,20 @@
   <body>
     <script src="script.js"></script>
     <section id="home" class="home margin-0">
-      <div class="hover-up padding-top-10rem">
-        <h1 class="text-bold text-white text-size-7rem"><em>Hungry?</em></h1>
-        <div class="recipe-box">
-          <h2>Bibimbap</h2>
-          <p class="text-size-18px">Bibimbap simply translates to “mixed rice with meat and assorted vegetables“. You can make endless variations to this dish depending on your preference and dietary requirements.</p>
+      <div class="display-flex-column-centre background-colour-white">
+        <h1 class="text-bold text-blue-dark text-size-7rem margin-top-0 padding-1rem"><em>Hungry?</em></h1>
+        <div class="padding-1rem display-flex-column-centre">
+          <h2 class="text-blue-dark">Bibimbap</h2>
+          <p class="height-6rem-width-30rem text-blue-dark text-align-centre">Bibimbap simply translates to “mixed rice with meat and assorted vegetables“. You can make endless variations to this dish depending on your preference and dietary requirements.</p>
         </div>
       </div>
     </section>
     <nav class="text-size-28px text-white text-bold">
-        <a href="#home" role="button">Home</a>
-        <a href="#breakfast" role="button">Breakfast</a>
-        <a href="#lunch" role="button">Lunch</a>
-        <a href="#dinner" role="button">Dinner</a>
-        <a href="#recipe-submission" role="button">Add a recipe</a>
+      <a href="#home">Home</a>
+      <a href="#breakfast">Breakfast</a>
+      <a href="#lunch">Lunch</a>
+      <a href="#dinner">Dinner</a>
+      <a href="#recipe-submission">Add a recipe</a>
     </nav>
     <section id="breakfast" aria_labelledby="breakfast">
       <h1>Breakfast</h1>
@@ -67,7 +67,7 @@
       <div class="recipe-card-container">
         <div class="recipe-box-with-border text-white">
           <img class="food-picture" alt="Pomegranate Pork Belly With Tomato Ginger Salad" src="assets/pomegranatepork-belly.png">
-          <h2 class="title">Pomegranate Pork Belly With Tomato Ginger Salad</h2>
+          <h2 class="title">Pomegranate Pork Belly & Tomato Ginger Salad</h2>
           <button id="pomegranatepork-belly-down-button" class="image-button" onClick="showRecipeDescription('pomegranatepork-belly')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Click to view description"></button>
           <button id="pomegranatepork-belly-up-button" class="image-button" onClick="hideRecipeDescription('pomegranatepork-belly')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Click to hide description"></button>
           <p id="pomegranatepork-belly" class="recipe-description" style="display:none">A vibrant, juicy, sticky, porky number that's absolutely perfect for a summery lunch. You are going to love it.</p>
@@ -89,29 +89,37 @@
       </div>
     </section>
     <section id="dinner" aria_labelledby="dinner">
-      <h1>Dinner</h1>
+      <h1 class="text-white">Dinner</h1>
+      <div class="recipe-card-container">
+        <div class="recipe-box-with-border text-white">
+          <img class="food-picture" alt="Slow-cooked lamb pilau with cucumber raita" src="assets/lamb-pilau.png">
+          <h2 class="title">Slow-Cooked Lamb Pilau With Raita</h2>
+          <button id="lamb-pilau-raita-down-button" class="image-button" onClick="showRecipeDescription('lamb-pilau-raita')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Click to view description"></button>
+          <button id="lamb-pilau-raita-up-button" class="image-button" onClick="hideRecipeDescription('lamb-pilau-raita')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Click to hide description"></button>
+          <p id="lamb-pilau-raita" class="recipe-description" style="display:none">Have a little patience and you'll be sorely rewarded with this fall-apart lamb pilau. An ideal recipe for Ramadan or any time of the year.</p>
+        </div>
+        <div class="recipe-box-with-border text-white">
+          <img class="food-picture" alt="Smoked Aubergine and Nduja Lasagne" src="assets/aubergine-nduja-lasagne.png">
+          <h2 class="title">Smoked Aubergine & Nduja Lasagne</h2>
+          <button id="aubergine-nduja-lasagne-down-button" class="image-button" onClick="showRecipeDescription('aubergine-nduja-lasagne')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Click to view description"></button>
+          <button id="aubergine-nduja-lasagne-button" class="image-button" onClick="hideRecipeDescription('aubergine-nduja-lasagne')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Click to hide description"></button>
+          <p id="aubergine-nduja-lasagne" class="recipe-description" style="display:none">This right here will be the most epic lasagne you've ever made. Layers of 'nduja and aubergine ragù, topped with a cheesy béchamel and sprinkled with Parm.</p>
+        </div>
+        <div class="recipe-box-with-border text-white">
+          <img class="food-picture" alt="Halloumi Peanut Curry" src="assets/halloumi-peanut-curry.png">
+          <h2 class="title">Halloumi Peanut Curry</h2>
+          <button id="halloumi-peanut-curry-down-button" class="image-button" onClick="showRecipeDescription('halloumi-peanut-curry')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Click to view description"></button>
+          <button id="halloumi-peanut-curry-up-button" class="image-button" onClick="hideRecipeDescription('halloumi-peanut-curry')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Click to hide description"></button>
+          <p id="halloumi-peanut-curry" class="recipe-description" style="display:none">Peanut butter and halloumi might not be the first ingredients that come to mind for a curry but this creamy spicy curry is a wonder. Make it for dinner tonight.</p>
+        </div>
+        <div class="recipe-box-with-border text-white">
+          <img class="food-picture" alt="Halloumi Peanut Curry" src="assets/sweet-potato-chickpea-curry.png">
+          <h2 class="title">Sweet Potato and Chickpea Curry</h2>
+          <button id="sweet-potato-chickpea-curry-down-button" class="image-button" onClick="showRecipeDescription('sweet-potato-chickpea-curry')"><img src="assets/icons/arrow-down-secondary-accent.png" alt="Click to view description"></button>
+          <button id="sweet-potato-chickpea-curry-up-button" class="image-button" onClick="hideRecipeDescription('sweet-potato-chickpea-curry')" style="display:none"><img src="assets/icons/arrow-up-secondary-accent.png" alt="Click to hide description"></button>
+          <p id="sweet-potato-chickpea-curry" class="recipe-description" style="display:none">Riaz Phillips cooked us up a hearty dinner packed with veg and warming spices. An ideal mid-week dinner.</p>
+        </div>
+      </div>
     </section>
-    <section id="recipe-submission" aria_labelledby="submit_a_recipe">
-      <h1>Submit a recipe</h1>
-      <form action="/recipe-submission" method="post">
-        <ul>
-            <li>
-              <label for="title">Recipe title</label>
-              <input type="text" class="name" name="user_name" />
-            </li>
-            <li>
-              <label for="instructions">Instructions</label>
-              <textarea type="email" class="mail" name="user_email"></textarea>
-            </li>
-            <li>
-              <label for="recipeImage">Recipe image</label>
-              <input type="image" alt="recipe image" />
-            </li>
-          </ul>
-    </form>
-    </section>
-    <div class="make-it-scroll"></div>
-    <div class="make-it-scroll"></div>
-    <div class="make-it-scroll"></div>
   </body>
 </html>
